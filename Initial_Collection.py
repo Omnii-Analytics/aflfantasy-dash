@@ -49,4 +49,7 @@ for _, row in match_ids_df.iterrows():
 
 # Convert all rows to a DataFrame at the end
 final_df = pd.DataFrame(all_rows, columns=columns)
+column_names = final_df.columns.tolist()
+
 print(final_df)
+print(column_names)
